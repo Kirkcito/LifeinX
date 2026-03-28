@@ -8,7 +8,7 @@ Inspired by Tim Urban's [Your Life in Weeks](https://waitbutwhy.com/2014/05/life
 
 ## 🖥️ Live Demo
 
-[View it live]([https://kirkcito.github.io/LifeInWeeks](https://kirkcito.github.io/LifeinX/))
+[View it live](https://kirkcito.github.io/LifeinX/)
 
 ---
 
