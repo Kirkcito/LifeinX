@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Life in X</title>
+    <link rel="stylesheet" href="/LifeInWeeks/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    
+        <!--Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,500;1,500&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--Merriweather-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,500;1,500&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header>
+        <div class="Header-Div" id="Titulo-Header"><h1>Your Life in X</h1></div>
+        <div class="Header-Div" id="Nav-Header">
+            <nav>
+                <ul id="UnorderedList-Header">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">    
+        <div id="TimeSelection">
+            <h1>Your Life in </h1> 
+            <!--We encapsulate the select element inside of a div-->
+            <!--So we use a % to control the width-->
+            <select name="" id="TIMESELECTION-SELECT">
+                <option class="Option-TimeSelector" value="weeks">Weeks</option>
+                <option class="Option-TimeSelector" value="months">Months</option>
+                <option class="Option-TimeSelector" value="years">Years</option>
+            </select>
+        </div>
+        <div id="Home-Section">
+            <p>Discover how many X (weeks,months,years) you have lived and how many you have left based on your age.</p>
+            <div id="Input-BirthDate">
+                <p>Enter your Date of Birth:</p>
+                <select name="month" id="month">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+
+                <input type="text" id="INPUTDAY" class="Input-date" placeholder="Day" maxlength="2">
+                
+                <input type="text" id="INPUTMONTH" class="Input-date" placeholder="Year" maxlength="4">
+
+            </div>
+            <div id="DivTimeContainer">
+                <div class="XTimeBox">
+                    <div class="CenterContent" id="LeftBoxTime">
+                        <p>x Lived</p>
+                        <h3 id="xTimeLived"></h3>
+                        <p>of expected life</p>
+                    </div>
+                </div>
+                <div class="XTimeBox">
+                    <div class="CenterContent" id="CenterBoxTime">
+                        <p>x Left</p>
+                        <h3 id="xTimeLeft"></h3> 
+                        <p>years</p>
+                    </div>
+                </div>
+                <div class="XTimeBox">
+                    <div class="CenterContent" id="RightBoxTime">
+                        <p>x Total</p>
+                        <h3 id="xTimeTotal"></h3>
+                        <p>year lifespan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="LifeProgress">
+                <div id="Porcentual-LifeProgress">
+                    <p>Life Progress</p>
+                    <p id="LifePorcentageAdvanced">Porcentage</p>
+                </div>
+                <div id="Progress-Bar">
+                    <div id="Progress-Bar-Completion"></div>
+                </div>
+                <div id="Life-Status">
+                    <p>Birth</p>
+                    <p>Current Age</p>
+                    <p>Death - Age 100</p>
+                </div>
+            </div>
+
+            <div id="GeneratorOfRandomQuotes">
+                <p id="RandomQuote"></p>
+            </div>
+
+            <div id="KeyElements">
+                <div class="KEYELEMENTOBOXSTYLE" id="BlackBox-Key"></div><p>Weeks Lived</p>
+                <div class="KEYELEMENTOBOXSTYLE" id="GreenBox-Key"></div><p>Current Week</p>
+                <div class="KEYELEMENTOBOXSTYLE" id="GrayBox-Key"></div><p>Weeks Remaining</p>
+            </div>
+
+            <!--Añadir un apartado para desplazarse hacia abajo en esa misma seccion cuando se eliga la opcion de semanas debido a la 
+            cantidad de casillas que usaremos-->
+            <div id="Result"></div>
+        </div>
+    </section>
+
+
+    <section id="about">    
+        <h2>About</h2>
+        <div id="About-Section">
+            <p>This is a simple web application that helps you visualize your life in terms of days, weeks, months, and years.
+                i created to help visualize the average life span of a person
+                also as a side project for learning purposes wich
+                is based on <a href="https://waitbutwhy.com/2014/05/life-weeks.html" target="_blank" rel="noopener noreferrer">Your Life in Weeks</a> By tim Urban
+            </p>
+        </div>
+    </section>
+
+
+    <section id="contact"> 
+            <h2>Contact</h2>
+            <p>You can link me up at </p>   
+        
+        <div id="Contact-Content">
+            <a href="https://github.com/Kirkcito" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/kirkcitos/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+    <div id="Footer-Container">
+ 
+        <div class="Footer-Section" id="Footer-About">
+            <h3>Your Life in X</h3>
+            <p>A personal project to visualize your life in weeks, months and years.</p>
+            <p>Inspired by Tim Urban's <a href="https://waitbutwhy.com/2014/05/life-weeks.html" target="_blank">Your Life in Weeks</a>.</p>
+        </div>
+ 
+        <div class="Footer-Section" id="Footer-Nav">
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+ 
+        <div class="Footer-Section" id="Footer-Contact">
+            <h3>Find me at</h3>
+            <ul>
+                <li><a href="https://github.com/Kirkcito" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div id="Footer-Bottom">
+        <p>&copy; 2026 Your Life in X — Built by Kirkcitos</p>
+    </div>
+
+    </footer>
+    
+    <script src="/LifeInWeeks/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    /* Es buena práctica reiniciar los márgenes por defecto del navegador */
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+p
+{
+    font-family: 'Merriweather', sans-serif;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Header-Div
+{
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+    width: 30%;
+}
+
+nav
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#UnorderedList-Header
+{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/*Sintaxis: repeat(numero_repeticiones, tamaño_columna)*/
+
+/*Section Home*/
+#home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 140vh;
+
+}
+
+#TimeSelection
+{
+    /*Size relative to the Screen*/
+    width: 20vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 10px;
+
+}
+
+#TIMESELECTION-SELECT
+{
+    /*We erase the extra borders*/
+    border: none;
+
+    font-family: inherit;
+    font-size: 2rem;
+    color: purple;
+    font-weight: bold;
+    
+    /*We fake the use of the underlined method*/
+
+
+    width: 35%;
+    height: auto;
+
+    background-color: transparent;
+}
+
+
+#Home-Section
+{
+    /*We use the sizes relative to the screen
+    in the web*/
+    width: 75vw;
+    height: 90%; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Input-BirthDate
+{
+    width: 25%;
+    height: auto;
+
+}
+
+#month
+{
+    font-family: 'Oswald', sans-serif;
+    width: 20%;
+    height: auto;
+}
+
+.Input-date
+{
+    font-family: 'Oswald', sans-serif;
+    width: 10%;
+    height: auto;
+}
+
+
+#DivTimeContainer
+{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.XTimeBox
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    width: 400px;
+    height: 120px;
+
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.XTimeBox:hover
+{
+    transform: translateY(5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.CenterContent
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+#LifeProgress
+{
+    width: 60%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#Porcentual-LifeProgress
+{
+    width: 95%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1rem;
+}
+
+#LifePorcentageAdvanced
+{
+    font-weight: 800 ;
+}
+
+#Progress-Bar
+{
+    display: flex;
+    width: 95%;
+    height: 30px;
+
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#Progress-Bar-Completion
+{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(0, 179, 255);
+    border-radius: 15px;
+    transition: width 0.5s ease-in-out;
+}
+
+#Life-Status
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    font-weight: 100;
+    color: gray;
+    font-size: 0.75rem;
+}
+
+#GeneratorOfRandomQuotes
+{
+    display: flex;
+
+    margin: 5px;
+}
+
+#KeyElements
+{
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 20px;
+
+}
+
+#KeyElements p
+{
+    font-size: 0.75rem;
+}
+
+.KEYELEMENTOBOXSTYLE
+{
+    width: 10px;
+    height: 10px;
+
+    display: block;
+
+    background-color: royalblue;
+}
+
+#BlackBox-Key
+{
+    background-color: #333333;
+}
+
+#GreenBox-Key
+{
+    background-color: #0066FF;
+}
+
+#GrayBox-Key
+{
+    background-color: #EBEBEB;
+}
+
+
+#Result
+{
+    border: 1px solid #ccc; /* Opcional: para ver dónde termina el contenedor */
+
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+
+    align-items: center;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(10,50px);  
+
+    /*We create gaps beetwen each grid so it looks more clean*/
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+
+/*Section About*/
+
+#about
+{
+    width: 100%;
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    
+    row-gap: 10px;
+}
+
+#About-Section
+{
+    width: 40%;
+}
+
+#About-Section a
+{
+    color: inherit;
+    text-decoration: underline;
+}
+
+/*Section Contact*/
+
+#contact
+{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 180px;
+
+}
+
+#contact a 
+{
+    color: inherit;
+}
+
+/*Footer Section*/
+
+footer
+{
+    width: 100%;
+    height: 10vh;
+   
+}
+
+#Footer-Container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#Footer-Container a
+{
+    color: inherit;
+    text-decoration: underline;
+}
+
+#Footer-About
+{
+    margin-left: 4px;
+}
+
+#Footer-Contact
+{
+    margin-right: 8px;
+}
+
+/*Javascript: */
+.Time-box
+{
+    width: 40px;
+    height: 40px;
+
+    
+}
