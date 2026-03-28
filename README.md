@@ -16,6 +16,9 @@ Inspired by Tim Urban's [Your Life in Weeks](https://waitbutwhy.com/2014/05/life
 
 <img width="1902" height="369" alt="imagen" src="https://github.com/user-attachments/assets/b79cc83a-1984-442c-9c58-1271217b51e5" />
 
+<img width="1440" height="896" alt="imagen" src="https://github.com/user-attachments/assets/b2f9cbb3-e3c4-4f56-871d-aeab5ed0d9bc" />
+
+<img width="1903" height="401" alt="imagen" src="https://github.com/user-attachments/assets/a10f01b3-ff7f-442a-bc8b-03eab8848f86" />
 
 ---
 
